@@ -1,0 +1,9 @@
+{
+    "remotes": [
+        {
+            "name": "asd-conan",
+            "url": "https://artifactory.bose.com/artifactory/api/conan/asd-conan",
+            "verify_ssl": true
+        }
+    ]
+}

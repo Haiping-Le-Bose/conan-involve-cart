@@ -1,0 +1,3 @@
+[buildenv]
+# Builds can look for this environment variable to check if conan is being used
+CONAN=true
