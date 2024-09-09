@@ -1,0 +1,14 @@
+include(common-env)
+include(common-tools)
+
+[settings]
+compiler=qcc
+compiler.cppstd=gnu14
+compiler.libcxx=cxx
+
+[conf]
+tools.build:compiler_executables={"c": "qcc", "cpp": "q++"}
+tools.build:cflags=["-Wall"]
+tools.build:cxxflags=["-Wall", "-stdlib=libstdc++", "-D_QNX_SOURCE", "-D_XOPEN_SOURCE=700", "-D_POSIX_C_SOURCE=200809"]
+tools.build:sysroot={{ os.getenv("QNX_TARGET") }}
+tools.cmake.cmaketoolchain:system_name="QNX"

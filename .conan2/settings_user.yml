@@ -1,0 +1,4 @@
+arch: [
+  # QNX
+  aarch64le
+]

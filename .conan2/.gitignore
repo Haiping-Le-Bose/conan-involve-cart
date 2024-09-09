@@ -1,0 +1,22 @@
+# User authentication
+.conan.db
+# Credential files
+credentials.json
+source_credentials.json
+# Local editable package list
+editable_packages.json
+# Current version file
+version.txt
+# Package cache
+/p/
+# Local cache of sources
+/sources/
+# Created when different versions of conan are used
+/migrations/
+
+# Currently auto generated files appear here. This ignore will need to be changed
+# if we need add custom files.
+/extensions/*
+# But these folders should be kept.
+!/extensions/deployers/
+!/extensions/hooks/

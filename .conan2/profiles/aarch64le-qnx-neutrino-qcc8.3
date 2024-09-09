@@ -1,0 +1,13 @@
+include(qnx)
+
+[settings]
+arch=aarch64le
+compiler.version=8.3
+os=Neutrino
+os.version=7.1
+
+[conf]
+tools.build:cflags+=["-V8.3.0,gcc_ntoaarch64le"]
+tools.build:cxxflags+=["-V8.3.0,gcc_ntoaarch64le"]
+tools.cmake.cmaketoolchain:user_toolchain=["{{ os.path.join(profile_dir, 'toolchains/aarch64le-qnx-qcc8.3.cmake') }}"]
+tools.gnu:host_triplet="aarch64-neutrino-qcc"

@@ -1,0 +1,8 @@
+include(aarch64le-qnx-neutrino-qcc8.3)
+
+[settings]
+build_type=Release
+
+[conf]
+tools.build:cflags+=["-O3"]
+tools.build:cxxflags+=["-O3"]

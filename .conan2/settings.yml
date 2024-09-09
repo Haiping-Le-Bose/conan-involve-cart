@@ -1,10 +1,7 @@
+# *** DO NOT MODIFY THIS FILE! ADD CUSTOM CHANGES TO settings_user.yml ***
+
 # https://docs.conan.io/2/reference/config_files/settings.html
 # settings.yml updated to conan v2.2.2
-#
-# *** ADDING TO THIS FILE ***
-# Generally we want to keep our changes separate to keep track of them
-# - Update an existing list => Add to the end of the list, and a comment if needed to understand what it is for
-# - Create a new field => Add the field in the appropriate place, with comments
 os:
     Windows:
         subsystem: [null, cygwin, msys, msys2, wsl]

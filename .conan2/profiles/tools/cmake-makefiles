@@ -1,6 +1,9 @@
-[replace_tool_requires]
-cmake/*: cmake/3.27.5@conan-center-index
-make/*: make/4.4@conan-center-index
+# cmake with Unix Makefiles generator
+
+include(make)
+
+[tool_requires]
+cmake/3.27.5@conan-center-index
 
 [conf]
 tools.cmake.cmake_layout:build_folder_vars=["settings.arch", "options.shared"]

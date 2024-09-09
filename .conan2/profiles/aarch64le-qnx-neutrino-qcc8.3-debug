@@ -1,0 +1,8 @@
+include(aarch64le-qnx-neutrino-qcc8.3)
+
+[settings]
+build_type=Debug
+
+[conf]
+tools.build:cflags+=["-g", "-Og"]
+tools.build:cxxflags+=["-g", "-Og"]
