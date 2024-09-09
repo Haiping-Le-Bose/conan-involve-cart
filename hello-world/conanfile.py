@@ -5,11 +5,12 @@ class HelloWorldRecipe(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
 
     def requirements(self):
-        self.requires("zlib/1.3.1@conan-center-index")
+        self.requires("release_rd8295/0.0.4@bosecorp")
 
     def build_requirements(self):
-        self.tool_requires("cmake/3.27.5@conan-center-index")
-        self.tool_requires("make/4.4@conan-center-index")
+        # self.tool_requires("cmake/3.27.5@conan-center-index")
+        # self.tool_requires("make/4.4@conan-center-index")
+        return
 
     def generate(self):
         deps = CMakeDeps(self)
