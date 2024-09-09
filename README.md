@@ -1,8 +1,6 @@
 # Involve CART With Conan
 Example of involving cart release via conan
 
-
-
 ## Prerequisites
 1. Conan
 
